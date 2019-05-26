@@ -23,8 +23,8 @@ module.exports = app => {
         const Tasks = TasksModel(sequelize, Sequelize);
         const Users = UsersModel(sequelize, Sequelize);
 
-        Tasks.belongsTo(Users);
-        Users.hasMany(Tasks);
+        // Tasks.belongsTo(Users);
+        // Users.hasMany(Tasks);
         
         db.models={
             'tasks': Tasks,
